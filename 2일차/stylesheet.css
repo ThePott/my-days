@@ -1,0 +1,16 @@
+.box {
+    max-width: 600px;
+    background-color: aqua;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    max-width: 100%;
+    background-color: brown
+}
+
+.innerBox {
+    padding-left: 48px;
+    padding-right: 48px;
+}
