@@ -9,10 +9,10 @@
 
 <body>
     <div class="container">
-        <div class="box mt-6">
+        <div class="box">
             <header>
                 <div class="titleBox">
-                    <div id="titleInline">
+                    <div id="titleInline" class="gap-6 flex">
                         <img src="./icon.png" width="48" alt="icon">
                         <h1 id="titleText">Sign Up</h1>
                     </div>
@@ -23,15 +23,13 @@
             <main>
                 <form>
                     <div class="innerBox">
-                        <fieldset class="my-6" title="necessaryInfo"">
-                            <input type=" text" name="name" id="name" placeholder="Name" class="textFieldTop">
-                            <input type="email" name="email" id="email" placeholder="Email" class="textField">
-                            <input type="password" name="password" id="password" placeholder="Password"
-                                class="textField">
-                            <input type="tel" name="phoneNumber" id="phoneNumber" placeholder="Phone Number"
-                                class="textField">
+                        <fieldset title="necessaryInfo"">
+                            <input type=" text" name="name" id="name" placeholder="Name" class="textField">
+                            <input type="email" name="email" id="email" placeholder="Email" class="textField mt-3">
+                            <input type="password" name="password" id="password" placeholder="Password" class="textField mt-3">
+                            <input type="tel" name="phoneNumber" id="phoneNumber" placeholder="Phone Number" class="textField mt-3">
 
-                            <div class="mt-6">
+                            <div class="mt-6" title="sexSelection">
                                 <p class="label">Sex</p>
                                 <input type="radio" name="sex" id="male">
                                 <label for="male">Male</label>
@@ -40,9 +38,10 @@
 
                             </div>
                         </fieldset>
-                        <hr />
-                        <fieldset class="my-6" title="cookInfo" style="border: 0;">
-                            <!-- <legend>좋아하는 요리</legend> -->
+
+                        <hr class="my-6" />
+
+                        <fieldset title="cookInfo">
                             <div title="foodYouLike">
                                 <h2>Food You Like</h2>
                                 <label for="bongole" class="block mt-3">
@@ -81,26 +80,27 @@
                             </div>
                         </fieldset>
 
-                        <hr />
-                        <fieldset class="my-6" title="termsOfUse">
+                        <hr class="my-6" />
+
+                        <fieldset title="termsOfUse">
                             <!-- <label for="cookDay" class="bold">When do you cook most often?</label> -->
                             <h2>Terms Of Use</h2>
-                            <div class="flexTop mt-3">
+                            <div class="flex mt-3 gap-2">
                                 <input type="checkbox" name="termsOfUse" value="TOU1" id="TOU1">
                                 <label for="TOU1">Keep your routine.</label>
                             </div>
-                            <div class="flexTop mt-3">
+                            <div class="flex mt-3 gap-2">
                                 <input type="checkbox" name="termsOfUse" value="TOU2" id="TOU2">
                                 <label for="TOU2">First failiure is okay, but second failiure is start of new habit.</label>
                             </div>
-                            <div class="flexTop mt-3">
+                            <div class="flex mt-3 gap-2">
                                 <input type="checkbox" name="termsOfUse" value="TOU3" id="TOU3">
                                 <label for="TOU3">Clean out every possible distractions.</label>
                             </div>
                         </fieldset>
                     </div>
 
-                    <button type="submit" class="mt-12 submitButton">
+                    <button type="submit" class="submitButton">
                         Submit
                     </button>
                 </form>

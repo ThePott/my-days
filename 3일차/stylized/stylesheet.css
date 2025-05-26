@@ -1,125 +1,99 @@
-.box {
-    max-width: 600px;
-    /* background-color: aqua; */
+/* ---- GENERAL ---- */
+/* initialize */
+* {
+    font-family: nerd-regular;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
+fieldset { border: 0 }
 
+/* layout */
 .container {
     display: flex;
     flex-direction: row;
     justify-content: center;
     max-width: 100%;
-    /* background-color: brown */
 }
 
-.titleBox {
-    background-color: black;
-    padding: 48px 48px 24px 48px;
-    border-radius: 12px 12px 0 0;
+.box {
+    max-width: 600px;
+    margin: 48px 0;
 }
 
-#titleInline {
+.innerBox { padding: 48px; }
+
+.block { display: block; }
+
+.flex {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
+/* title */
+.titleBox {
+    background-color: black;
+    padding: 48px 48px 24px 48px;
+    border-radius: 12px 12px 0 0;
+}
 #titleText {
     color: white;
-    margin-left: 24px;
+    font-size: 30px;
 }
 
-.innerBox {
-    padding-left: 48px;
-    padding-right: 48px;
-}
+/* spacing */
+.m-12 { margin: 48px; }
+.mt-12 { margin-top: 48px; }
+.mt-6 { margin-top: 24px }
+.my-6 { margin: 24px 0px;  }
+.mt-3 { margin-top: 12px; }
+.mt-1 { margin-top: 4px; }
 
-.m-12 {
-    margin: 48px;
-}
+.gap-6 { gap: 24px; }
+.gap-2 { gap: 8px; }
+.gap-1 { gap: 4px; }
 
-.mt-12 {
-    margin-top: 48px;
-}
-
-.mt-6 {
-    margin-top: 24px;
-}
-.my-6 {
-    margin-top: 24px;
-    margin-bottom: 24px;
-}
-
-.mt-3 {
-    margin-top: 12px;
-}
-
-.mt-1 {
-    margin-top: 4px;
-}
-
-#mt-0 {
-    margin-top: 0px;
-}
-
+/* font */
 @font-face {
     font-family: "noto-sans-kr";
     src: url("./NotoSansKR-VariableFont_wght.ttf");
 }
-
 @font-face {
     font-family: "nerd-regular";
     src: url("./0xProtoNerdFontPropo-Regular.ttf");
 }
-
 @font-face {
     font-family: "nerd-bold";
     src: url("./0xProtoNerdFontPropo-Bold.ttf");
 }
 
-* {
-    font-family: nerd-regular;
-}
-
+/* markdown */
 h1 {
     font-family: nerd-bold;
     font-weight: 900;
-    margin: 0;
-    padding: 0;
     font-size: 30px;
 }
-
-
-h2,
-h3,
-h4,
-h5,
-h6 {
+h2, h3, h4, h5, h6 {
     font-family: nerd-bold;
     font-size: 16px;
     font-weight: 900;
-    margin: 0;
-    padding: 0;
 }
 
+/* 소제목 */
 .bold {
     font-family: nerd-bold;
     font-size: 16px;
     font-weight: 900;
 }
-
-.font-base {
+.label {
     font-size: 16px;
+    font-family: nerd-bold;
+    font-weight: 900;
+    display: inline;
 }
 
-p {
-    padding: 0;
-    margin: 0;
-}
-
-.block {
-    display: block;
-}
-
+/* ---- SPECIFIC TO THIS PROJECT ---- */
 select {
     font-size: 16px;
     padding-left: 6px;
@@ -138,43 +112,12 @@ select {
     border-radius: 0 0 12px 12px;
 }
 
-fieldset {
-    padding: 0;
-    margin: 0;
-    border: 0;
-}
-
-.textFieldTop {
-    font-size: 16px;
-    border-radius: 12px;
-    width: 100%;
-    height: 48px;
-    padding: 8px 12px;
-    
-    display: block;
-    box-sizing: border-box;
-}
 .textField {
     font-size: 16px;
     border-radius: 12px;
     width: 100%;
     height: 48px;
     padding: 8px 12px;
-    
     display: block;
-    box-sizing: border-box;
-    margin-top: 12px;
 }
 
-.label {
-    font-size: 16px;
-    font-family: nerd-bold;
-    font-weight: 900;
-    display: inline;
-}
-
-.flexTop {
-    display: flex;
-    flex-direction: row;
-    align-items: start;
-}
