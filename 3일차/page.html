@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="하흥주">
+    <meta name="description" content="초격차 프론트엔드 12기 화이팅">
+    <meta name="keywords" content="어제보다, 나은, 오늘">
+    <link rel="stylesheet" href="../stylesheet.css">
+    <title>설문조사</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <header>
+                <nav>
+                    <div style="display: flex; flex-direction: row;">
+                        <a href="../1일차/page.html">1일차</a>
+                        <a href="../2일차/page.html" style="margin-left: 1.5rem;">2일차</a>
+                    </div>
+                </nav>
+                <h1>질 좋은 수면을 위한 설문조사</h1>
+            </header>
+            <main>
+                <h2>안내</h2>
+                <h3>이렇게 해 주세요</h3>
+                <ol>
+                    <li>어제 일과 종료 후부터 오늘 아침 일어날 때까지 일어난 일들을 생각해주세요.</li>
+                    <li>설문 문항을 읽으며 처음 떠오른 것을 적어주세요</li>
+                </ol>
+                <h3>주의사항</h3>
+                <ul>
+                    <li>오래 고민하지 마세요.</li>
+                    <li>문항에 답할 땐 핸드폰을 잠깐 꺼주세요.</li>
+                </ul>
+                <h2>설문지</h2>
+                <form action="">
+                    <fieldset title="personalInfo">
+                        <legend>인적사항</legend>
+                        <div>
+                            <label for="name">이름</label>
+                            <input type="text" name="name" id="name" />
+                        </div>
+
+                        <div class="mt-1">
+                            <label for="age">나이</label>
+                            <input type="number" name="age" id="age">
+                        </div>
+
+                        <div class="mt-1">
+                            <label for="sex">성별</label>
+                            <select name="sex">
+                                <option>남자</option>
+                                <option>여자</option>
+                            </select>
+                        </div>
+
+                        <div class="mt-1">
+                            <label for="email">이메일</label>
+                            <input type="email" id="email" name="email">
+                        </div>
+                    </fieldset>
+
+                    <fieldset title="sleepInfo" class="mt-3">
+                        <legend>컨디션</legend>
+                        <div title="sleepCondition">
+                            <h3>오늘 얼마나 잘 잤나요?</h3>
+                            <label for="sleepCondition">
+                                아주 못 잤다
+                                <input type="range" name="sleepCondition" id="sleepCondition">
+                                아주 잘 잤다
+                            </label>
+                        </div>
+
+                        <div title="wakeUpTime">
+                            <h3>오늘 언제 일어났나요?</h3>
+                            <input type="radio" value="4to6" name="wakeUpTime" id="4to6">
+                            <label for="4to6">오전 4시 ~ 6시</label>
+                            <input type="radio" value="6to8" name="wakeUpTime" id="6to8">
+                            <label for="6to8">오전 6시 ~ 8시</label>
+                            <input type="radio" value="8to10" name="wakeUpTime" id="8to10">
+                            <label for="8to10">오전 8시 ~ 10시</label>
+                            <input type="radio" value="10to12" name="wakeUpTime" id="10to12">
+                            <label for="10to12">오전 10시 ~ 정오</label>
+                        </div>
+
+                        <div title="sleepTime">
+                            <h3>어제 언제 잠자리에 누웠나요?</h3>
+                            <input type="time" name="sleepTime">
+                        </div>
+                    </fieldset>
+
+                    <fieldset title="didWhatWillDoWhat" class="mt-3">
+                        <legend>개선사항</legend>
+                        <div title="beforeSleep">
+                            <h3>일과 종료 후부터 자기 전까지 무엇을 했나요?</h3>
+                            <input type="checkbox" name="beforeSleep" value="snack" id="snack">
+                            <label for="snack">간식</label>
+                            <input type="checkbox" name="beforeSleep" value="workOut" id="workOut">
+                            <label for="workOut">운동</label>
+                            <input type="checkbox" name="beforeSleep" value="shower" id="shower">
+                            <label for="shower">샤워</label>
+                            <input type="checkbox" name="beforeSleep" value="youtube" id="youtube">
+                            <label for="youtube">유튜브 시청</label>
+                            <input type="checkbox" name="beforeSleep" value="call" id="call">
+                            <label for="call">통화</label>
+                        </div>
+
+                        <div title="whatToDo">
+                            <h3>수면의 질을 높이기 위해 무엇을 하려고 하나요?</h3>
+                            <textarea name="whatToDo" id="whatToDo" rows="5" cols="60"></textarea>
+                        </div>
+                    </fieldset>
+
+                    <button type="submit" class="mt-3">제출</button>
+                </form>
+            </main>
+            <footer>
+                <h2>ChangeLog</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Version</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>2025-05-26</td>
+                            <td>1.0.0</td>
+                            <td>최초 배포</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>

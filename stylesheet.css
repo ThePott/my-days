@@ -14,3 +14,10 @@
     padding-left: 48px;
     padding-right: 48px;
 }
+
+.mt-3 {
+    margin-top: 1.5rem;
+}
+.mt-1 {
+    margin-top: 0.5rem;
+}
