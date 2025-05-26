@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>회원가입</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+
+            <h1>3일차 과제 그 두 번째</h1>
+
+            <form>
+                <fieldset class="mt-3">
+                    <legend>계정 만들기</legend>
+                    <div>
+                        <label for="name">이름</label>
+                        <input type="text" name="name" id="name" placeholder="이름">
+                    </div>
+                    <div class="mt-1">
+                        <label for="email">이메일</label>
+                        <input type="email" name="email" id="email" placeholder="이메일">
+                    </div>
+                    <div class="mt-1">
+                        <label for="password">비밀번호</label>
+                        <input type="password" name="password" id="password" placeholder="비밀번호">
+                    </div>
+                    <div class="mt-1">
+                        <label for="phoneNumber">전화번호</label>
+                        <input type="tel" name="phoneNumber" id="phoneNumber" placeholder="전화번호">
+                    </div>
+                </fieldset>
+
+                <fieldset class="mt-3">
+                    <legend>좋아하는 요리</legend>
+                    <input type="checkbox" name="whatILike" value="bongole" id="bongole">
+                    <label for="bongole">봉골레 파스타</label>
+                    <input type="checkbox" name="whatILike" value="myungran" id="myungran">
+                    <label for="myungran">명란 파스타</label>
+                    <input type="checkbox" name="whatILike" value="carbonara" id="carbonara">
+                    <label for="carbonara">까르보나라</label>
+                    <input type="checkbox" name="whatILike" value="pajun" id="pajun">
+                    <label for="pajun">해물파전</label>
+                    <input type="checkbox" name="whatILike" value="tteokbokki" id="tteokbokki">
+                    <label for="tteokbokki">떡볶이</label>
+
+                    
+                    <div class="mt-3">
+                        <label for="cookDay">요리를 가장 많이 하는 요일</label>
+                        <select name="cookDay" id="cookDay">
+                            <option value="mon">월요일</option>
+                            <option value="tue">화요일</option>
+                            <option value="wed">수요일</option>
+                            <option value="thu">목요일</option>
+                            <option value="fri">금요일</option>
+                            <option value="sat">토요일</option>
+                            <option value="sun">일요일</option>
+                        </select>
+                    </div>
+                </fieldset>
+
+                <button type="submit" class="mt-3">가입하기</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
