@@ -1,0 +1,48 @@
+@media screen and (max-width: 600px) {
+    #sidebar {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .chat-room p {
+        display: none;
+    }
+}
+
+#sidebar {
+    background-color: lightslategray;
+    max-width: 300px;
+    width: 100%;
+    min-width: 96px;
+    /* float: left; */
+    flex-shrink: 10;
+}
+
+#header {
+    width: 100%;
+}
+
+#chat-area {
+    flex-grow: 1;
+    background-color: yellowgreen;
+    margin: 0 auto;
+    justify-content: end;
+    flex-shrink: 1;
+}
+
+.chat-room {
+    background-color: burlywood;
+    height: 72px;
+}
+
+.chat-room:last-child {
+    margin-bottom: 48px;
+}
+
+.profile {
+    /* width: 48px; */
+    height: 48px;
+    background-color: lightseagreen;
+    min-width: 48px;
+}
