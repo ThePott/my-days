@@ -40,6 +40,17 @@ fieldset {
     align-items: center;
 }
 
+.align-items-start {
+    align-items: start;
+}
+.align-items-center {
+    align-items: center;
+}
+.align-items-end {
+    align-items: end;
+}
+
+
 /* title */
 .titleBox {
     background-color: black;
@@ -89,6 +100,8 @@ fieldset {
 .mt-2 { margin-top: 8px; }
 .mt-1 { margin-top: 4px; }
 
+.mb-6 { margin-bottom: 24px;}
+
 .gap-6 { gap: 24px; }
 .gap-3 { gap: 12px; }
 .gap-2 { gap: 8px; }
@@ -107,12 +120,12 @@ hr {
 } */
 @font-face {
     font-family: "nerd-regular";
-    src: url("./0xProtoNerdFontPropo-Regular.ttf");
+    src: url("../font/0xProtoNerdFontPropo-Regular.ttf");
 }
 
 @font-face {
     font-family: "nerd-bold";
-    src: url("./0xProtoNerdFontPropo-Bold.ttf");
+    src: url("../font/0xProtoNerdFontPropo-Bold.ttf");
 }
 
 /* markdown */
@@ -149,4 +162,8 @@ h6 {
     font-family: nerd-bold;
     font-weight: 900;
     display: inline;
+}
+
+.font-color-white {
+    color: #F6F2EE;
 }

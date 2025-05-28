@@ -1,43 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .parent {
+            padding: 24px;
+            background-color: red;
+        }
+        .child {
+            background-color: lightblue;
+            padding: 12px;
+        }
+        .parent .child:nth-child(1) {
+            background-color: green;
+        }
+    </style>
 </head>
-
 <body>
-    <div style="
-    display: flex;
-     flex-direction: column; 
-     align-items: center;
-     background-color: blueviolet;
-      width: 600px;
-      margin: 0 auto;
-      ">
-        <header style="width: 100%">
-            <nav style="width: 100%">
-                <div style="height: 100px; width:100%; background-color: aqua;">
-                    asdfasdfasdf
-                    <div style="display: flex; flex-direction: row; background-color: red;">
-                        <div style="width: 100px; height: 100px; background-color: yellow;">1</div>
-                        <div style="width: 100px; height: 100px; background-color: green;">2</div>
-                        <div style="width: 100px; height: 100px; background-color: orange;">3</div>
-                    </div>
-                </div>
-            </nav>
-        </header>
-
-
-        <div style="width: 100vw; height: 100px; background-color: cadetblue;"></div>
-        <section style="width: 100%;">
-            <div style="width: 100%; height: 100px; background-color: cadetblue;"></div>
-        </section>
-        <div style="width: 100%; height: 100px; background-color: cadetblue;"></div>
-        <div style="width: 100%; height: 100px; background-color: cadetblue;"></div>
-
+    <div class="child"></div>
+    <div class="parent">
+        <div class="child">
+            <p>Child 1</p>
+        </div>
+        <div class="child">
+            <p>Child 2</p>
+        </div>
+        <div class="child">
+            <p>Child 3</p>
+        </div>
     </div>
 </body>
-
 </html>
