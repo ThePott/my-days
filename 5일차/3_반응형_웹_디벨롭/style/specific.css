@@ -1,3 +1,13 @@
+.full-screen {
+    height: 100vh;
+    align-items: stretch;
+    max-width: 1024px;
+    margin: 0 auto;
+    position: relative;
+    background-color: red;
+}
+
+
 @media screen and (max-width: 600px) {
     #sidebar {
         display: none;
@@ -10,6 +20,32 @@
     }
 }
 
+#btn-expand {
+    background-color: aqua;
+    width: 60px;
+    height: 48px;
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    border: none;
+}
+
+#btn-expand:hover {
+    background-color: darkturquoise;
+    transition-property: background-color;
+    transition-duration: 0.05s;
+    transition-timing-function: ease-out;
+
+}
+
+#btn-expand:active {
+    transform: scale(0.95);
+    transition-property: transform;
+    transition-duration: 0.05s;
+    transition-timing-function: ease-out;
+}
+
+
 #sidebar {
     background-color: lightslategray;
     max-width: 300px;
@@ -19,8 +55,21 @@
     flex-shrink: 10;
 }
 
+#scroll {
+    height: calc(100vh - 72px);
+    margin-top: 72px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    scrollbar-width: 0;
+    scrollbar-color: transparent transparent;
+}
+
+
 #header {
+    background-color: green;
+    height: 72px;
     width: 100%;
+    padding: 12px 84px;
 }
 
 #chat-area {
@@ -40,9 +89,23 @@
     margin-bottom: 48px;
 }
 
+
+/* header */
 .profile {
     /* width: 48px; */
     height: 48px;
     background-color: lightseagreen;
     min-width: 48px;
+}
+
+/* chat body */
+#chat-body {
+    background-color: lightsalmon;
+    flex-grow: 1;
+}
+
+/* chat input area */
+#chat-input-area {
+    background-color: lightgoldenrodyellow;
+    height: 144px;
 }

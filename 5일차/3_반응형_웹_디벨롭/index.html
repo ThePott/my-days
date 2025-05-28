@@ -11,25 +11,13 @@
 
 <body>
 
-    <div class="flex" style="background-color: red; 
-        height: 100vh;
-        align-items: stretch;
-        max-width: 1024px; margin: 0 auto;
-        position: relative;
-        ">
+    <div class="full-screen flex">
 
         <!-- expand collapse button -->
-        <div style="background-color: aqua;
-         width: 60px;
-          height: 48px;
-           position: absolute; 
-           top: 12px; left: 12px;">
-
-        </div>
+        <button id="btn-expand"></button>
 
         <aside id="sidebar">
-            <div
-                style="height: calc(100vh - 72px); margin-top: 72px; overflow-x: hidden; overflow-y: scroll; scrollbar-width: 0; scrollbar-color: transparent transparent;">
+            <div id="scroll">
                 <div class="chat-room flex gap-3 mx-3 p-3">
                     <div class="profile"></div>
                     <p>recent chat</p>
@@ -104,20 +92,18 @@
 
         <!-- <section> -->
         <div id="chat-area" class="box flex flex-col">
-            <header>
-                <!-- header -->
-                <div class="flex gap-3" style="background-color: green; height: 72px; width: 100%; padding: 12px 84px;">
-                    <div class="profile"></div>
-                    <p>
-                        user's name
-                    </p>
-                </div>
+            <header id="header" class="flex gap-3">
+                <div class="profile"></div>
+                <p>
+                    user's name
+                </p>
             </header>
 
-            <div class="w-full" style="background-color: lightsalmon; flex-grow: 1;">
-                <p> chat cooontent</p>
+
+            <div id="chat-body" class="w-full">
+                <p> chat body</p>
             </div>
-            <div class=" w-full" style="background-color: lightgoldenrodyellow; height: 144px;">
+            <div id="chat-input-area" class="w-full">
                 <p>chat input box</p>
             </div>
         </div>
